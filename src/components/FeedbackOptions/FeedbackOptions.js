@@ -1,14 +1,14 @@
-import React from 'react';
+import { Buttons } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <Buttons>
       {options.map(option => (
         <button key={option} onClick={() => onLeaveFeedback(option)}>
           {option}
         </button>
       ))}
-    </div>
+    </Buttons>
   );
 };
 

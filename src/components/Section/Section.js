@@ -1,11 +1,11 @@
-import React from 'react';
+import { FeedbackList } from './Section.styled';
 
 const Section = ({ title, children }) => {
   return (
-    <div>
+    <FeedbackList>
       <h2>{title}</h2>
       {children}
-    </div>
+    </FeedbackList>
   );
 };
 
